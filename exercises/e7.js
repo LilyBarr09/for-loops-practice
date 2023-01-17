@@ -5,9 +5,14 @@
 
 export function getClientWithLeastBalance(array) {
   // Your code goes here...
-
+  let min = array[0];
+  for (const people of array) {
+    if (people.balance > 0) {
+      min = people;
+    }
+  }
+  return [min];
 }
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-7"
 // If the test has all tests passed, switch to the next exercise file
