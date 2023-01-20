@@ -18,7 +18,6 @@ export function getAllAccountsWithSumsOfDepositsLess2000(array) {
       persons.push(person);
     }
   }
-  console.log(persons);
   return persons;
 }
 

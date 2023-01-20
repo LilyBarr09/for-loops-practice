@@ -10,16 +10,13 @@ export function getAllWithdrawals(array) {
     let sum = 0;
     if (person.withdrawals) {
       const { withdrawals } = person;
-      console.log(withdrawals);
 
       for (let i = 0; i < withdrawals.length; i++) {
         sum += withdrawals[i];
       }
     }
     withdrawalTotals.push(sum);
-    console.log(sum);
   }
-  console.log(withdrawalTotals);
   return withdrawalTotals;
 }
 

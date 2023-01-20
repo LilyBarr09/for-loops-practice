@@ -12,16 +12,13 @@ export function getAllDepositsGreaterThanOneHundred(array) {
       continue;
     }
     const { deposits } = person;
-    console.log(deposits);
 
     for (let i = 0; i < deposits.length; i++) {
       if (deposits[i] > 100) {
-        console.log(deposits[i]);
         depositsOverHundred.push(deposits[i]);
       }
     }
   }
-  console.log(depositsOverHundred);
   return depositsOverHundred;
 }
 
