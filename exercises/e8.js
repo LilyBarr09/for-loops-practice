@@ -11,7 +11,6 @@ export function getClientWithGreatestBalance(array) {
       max = people;
     }
   }
-  console.log(max);
   return [max];
 }
 

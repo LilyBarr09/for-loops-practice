@@ -7,7 +7,7 @@ export function getClientWithLeastBalance(array) {
   // Your code goes here...
   let min = array[0];
   for (const people of array) {
-    if (people.balance > 0) {
+    if (people.balance < min.balance && people.balance > 0) {
       min = people;
     }
   }
